@@ -1,0 +1,36 @@
+
+#include<iostream>
+using namespace std;
+
+#pragma pack(1)
+class ArrayX
+{
+    public:
+        int *Arr;
+        int iSize;
+
+        
+        // Parameterized Constructer
+        ArrayX(int x)
+        {
+            cout<<"Inside Constructer.";
+            iSize = x;
+            Arr = new int[iSize];
+
+        }
+
+        // Destructer
+        ~ArrayX()
+        {
+            cout<<"Inside Destructer.";
+          delete []Arr;  
+        }
+};
+int main()
+{
+                                
+    ArrayX aobj1(5);                            // Parameterized
+    
+    return 0;
+
+}
