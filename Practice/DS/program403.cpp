@@ -1,0 +1,80 @@
+#include <iostream>
+using namespace std;
+
+#pragma pack(1)
+struct node
+{
+    int data;
+    struct node *next;
+
+};
+
+typedef struct node NODE;
+typedef struct node* PNODE;
+
+class SinglyLL
+{
+
+    private :
+        PNODE first;
+        int iCount;
+
+    public :
+        SinglyLL();
+
+        void Display();
+
+        int Count();
+
+        void InsertFirst(int iNO);
+        void InsertLast(int iNO);
+        void InsertAtPos(int iNO, int iPos);
+        void DeleteFirst();    
+        void DeleteLast();
+        void DeleteAtPos(int iPos);
+};
+
+SinglyLL::SinglyLL()
+{
+    cout<<"Inside constructer";
+    this->first = NULL;
+    this->iCount = 0;
+}
+
+void SinglyLL::Display()
+{}
+
+int SinglyLL:: Count()
+{
+        return this->iCount;
+}
+
+void SinglyLL :: InsertFirst(int iNO)
+{}
+
+void SinglyLL :: InsertLast(int iNO)
+{}
+
+void SinglyLL :: InsertAtPos(int iNO, int iPos)
+{}
+
+void SinglyLL :: DeleteFirst()
+{}    
+
+void SinglyLL :: DeleteLast()
+{}
+
+void SinglyLL :: DeleteAtPos(int iPos)
+{}
+
+
+int main()
+{
+    SinglyLL sobj;
+
+    
+
+
+
+    return 0;
+}
